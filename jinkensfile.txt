@@ -1,0 +1,33 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                g
+git https://github.com/NeerajGupta26/RestfulBookerAPIAutomation.git
+        }
+
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'mvn clean test'
+            }
+        }
+
+        stage('Report') {
+            steps {
+                echo 'Publishing Report'
+            }
+        }
+
+    }
+
+}

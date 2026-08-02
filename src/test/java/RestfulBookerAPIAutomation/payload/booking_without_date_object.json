@@ -1,0 +1,10 @@
+{
+  "firstname": "Neeraj",
+  "lastname": "Gupta",
+  "totalprice": 500,
+  "depositpaid": true,
+  
+    "checkin": "2026-08-01",
+    "checkout": "2026-08-05",
+  "additionalneeds": "Breakfast"
+}

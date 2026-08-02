@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RestfulBooker API Suite">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="API Automation Tests">
+
+        <classes>
+            <class name="test.HealthCheckTest"/>
+            <class name="test.AuthTest"/>
+            <class name="test.CreatBookingTest"/>
+            <class name="test.GetBookingTest"/>
+            <class name="test.GetBookingByIdTest"/>
+            <class name="test.UpdateBookingTest"/>
+            <class name="test.PartialUpdateBookingTest"/>
+            <class name="test.DeleteBookingTest"/>
+        </classes>
+
+    </test>
+
+</suite>

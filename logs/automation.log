@@ -1,0 +1,1227 @@
+02-08-2026 19:13:14 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 19:13:15 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 19:13:19 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 19:13:19 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 19:13:20 [INFO] PASSED : verifyHealthCheckResponseTime
+02-08-2026 19:13:20 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:13:22 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:13:22 [INFO] STARTED : verifyAuthToken
+02-08-2026 19:13:25 [INFO] PASSED : verifyAuthToken
+02-08-2026 19:13:25 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 19:13:26 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 19:13:26 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 19:13:28 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 19:13:28 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 19:13:30 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 19:13:30 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 19:13:31 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 19:13:31 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 19:13:33 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 19:13:33 [INFO] STARTED : createBooking
+02-08-2026 19:13:35 [INFO] PASSED : createBooking
+02-08-2026 19:13:35 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 19:13:36 [ERROR] FAILED : creat_booking_without_aditional_fields
+02-08-2026 19:13:36 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.CreatBookingTest.creat_booking_without_aditional_fields(CreatBookingTest.java:40) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:13:36 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 19:13:38 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 19:13:38 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 19:13:40 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 19:13:40 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 19:13:41 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 19:13:41 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 19:13:43 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 19:13:43 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 19:13:45 [ERROR] FAILED : booking_with_totalprice_as_string
+02-08-2026 19:13:45 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <500> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.CreatBookingTest.booking_with_totalprice_as_string(CreatBookingTest.java:112) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:13:45 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 19:13:46 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 19:13:46 [INFO] STARTED : booking_dates
+02-08-2026 19:13:48 [INFO] PASSED : booking_dates
+02-08-2026 19:13:48 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 19:13:50 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 19:13:50 [INFO] STARTED : get_booking
+02-08-2026 19:13:52 [INFO] PASSED : get_booking
+02-08-2026 19:13:52 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 19:13:54 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 19:13:54 [INFO] STARTED : filter_by_firstname
+02-08-2026 19:13:56 [INFO] PASSED : filter_by_firstname
+02-08-2026 19:13:56 [INFO] STARTED : filter_by_lastname
+02-08-2026 19:13:57 [INFO] PASSED : filter_by_lastname
+02-08-2026 19:13:57 [INFO] STARTED : checking_checkout_date
+02-08-2026 19:13:59 [INFO] PASSED : checking_checkout_date
+02-08-2026 19:13:59 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:14:01 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:14:01 [INFO] STARTED : get_booking_id
+02-08-2026 19:14:02 [INFO] PASSED : get_booking_id
+02-08-2026 19:14:02 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 19:14:04 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 19:14:04 [INFO] STARTED : verify_non_existing_id
+02-08-2026 19:14:06 [INFO] PASSED : verify_non_existing_id
+02-08-2026 19:14:06 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 19:14:07 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 19:14:07 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:14:09 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:14:09 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 19:14:10 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 19:14:10 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 19:14:12 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 19:14:12 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 19:14:14 [ERROR] FAILED : verifyUpdatedBookingDataPersists
+02-08-2026 19:14:14 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+JSON path bookingdates.checkin doesn't match.
+Expected: 2026-08-06
+  Actual: 2026-08-01
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244) ~[rest-assured-5.5.0.jar:?]
+	at test.UpdateBookingTest.verifyUpdatedBookingDataPersists(UpdateBookingTest.java:46) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:14:14 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 19:14:15 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 19:14:15 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 19:14:17 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 19:14:17 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 19:14:18 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 19:14:18 [INFO] STARTED : verify_missing_field
+02-08-2026 19:14:21 [INFO] PASSED : verify_missing_field
+02-08-2026 19:14:21 [INFO] STARTED : verify_empty_body
+02-08-2026 19:14:22 [INFO] PASSED : verify_empty_body
+02-08-2026 19:14:22 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 19:14:24 [ERROR] FAILED : verify_with_totalprice_non_number
+02-08-2026 19:14:24 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.UpdateBookingTest.verify_with_totalprice_non_number(UpdateBookingTest.java:131) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:14:24 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 19:14:25 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 19:14:25 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 19:14:27 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 19:14:27 [INFO] STARTED : verify_updated_fields
+02-08-2026 19:14:29 [INFO] PASSED : verify_updated_fields
+02-08-2026 19:14:29 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 19:14:30 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 19:14:30 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 19:14:32 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 19:14:32 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:14:34 [ERROR] FAILED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:14:34 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.PartialUpdateBookingTest.verify_with_depositpaid_invalid_strings(PartialUpdateBookingTest.java:90) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:14:34 [INFO] STARTED : delete_existing_booking
+02-08-2026 19:14:35 [INFO] PASSED : delete_existing_booking
+02-08-2026 19:14:35 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:14:37 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:14:37 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:14:39 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:14:39 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:14:41 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:14:41 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:14:42 [INFO] PASSED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:14:42 [INFO] ========== Test Suite Finished : API Automation Tests ==========
+02-08-2026 19:23:20 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 19:23:21 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 19:23:26 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 19:23:26 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 19:23:29 [ERROR] FAILED : verifyHealthCheckResponseTime
+02-08-2026 19:23:29 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <2000L> milliseconds, was 2200 milliseconds (2200 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405) ~[rest-assured-5.5.0.jar:?]
+	at test.HealthCheckTest.verifyHealthCheckResponseTime(HealthCheckTest.java:32) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:23:29 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:23:33 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:23:33 [INFO] STARTED : verifyAuthToken
+02-08-2026 19:23:36 [INFO] PASSED : verifyAuthToken
+02-08-2026 19:23:36 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 19:23:38 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 19:23:38 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 19:23:39 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 19:23:39 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 19:23:41 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 19:23:41 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 19:23:44 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 19:23:44 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 19:23:46 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 19:23:46 [INFO] STARTED : createBooking
+02-08-2026 19:23:48 [INFO] PASSED : createBooking
+02-08-2026 19:23:48 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 19:23:51 [INFO] PASSED : creat_booking_without_aditional_fields
+02-08-2026 19:23:51 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 19:23:53 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 19:23:53 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 19:23:55 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 19:23:55 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 19:23:57 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 19:23:57 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 19:23:58 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 19:23:58 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 19:24:00 [INFO] PASSED : booking_with_totalprice_as_string
+02-08-2026 19:24:00 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 19:24:02 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 19:24:02 [INFO] STARTED : booking_dates
+02-08-2026 19:24:03 [INFO] PASSED : booking_dates
+02-08-2026 19:24:03 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 19:24:05 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 19:24:05 [INFO] STARTED : get_booking
+02-08-2026 19:24:07 [INFO] PASSED : get_booking
+02-08-2026 19:24:07 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 19:24:09 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 19:24:09 [INFO] STARTED : filter_by_firstname
+02-08-2026 19:24:10 [INFO] PASSED : filter_by_firstname
+02-08-2026 19:24:10 [INFO] STARTED : filter_by_lastname
+02-08-2026 19:24:12 [INFO] PASSED : filter_by_lastname
+02-08-2026 19:24:12 [INFO] STARTED : checking_checkout_date
+02-08-2026 19:24:14 [INFO] PASSED : checking_checkout_date
+02-08-2026 19:24:14 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:24:16 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:24:16 [INFO] STARTED : get_booking_id
+02-08-2026 19:24:17 [INFO] PASSED : get_booking_id
+02-08-2026 19:24:17 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 19:24:19 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 19:24:19 [INFO] STARTED : verify_non_existing_id
+02-08-2026 19:24:21 [INFO] PASSED : verify_non_existing_id
+02-08-2026 19:24:21 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 19:24:22 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 19:24:22 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:24:24 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:24:24 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 19:24:26 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 19:24:26 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 19:24:29 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 19:24:29 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 19:24:32 [ERROR] FAILED : verifyUpdatedBookingDataPersists
+02-08-2026 19:24:32 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+JSON path bookingdates.checkout doesn't match.
+Expected: 2026-08-01
+  Actual: 2026-08-05
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244) ~[rest-assured-5.5.0.jar:?]
+	at test.UpdateBookingTest.verifyUpdatedBookingDataPersists(UpdateBookingTest.java:47) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:24:32 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 19:24:33 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 19:24:33 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 19:24:35 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 19:24:35 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 19:24:38 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 19:24:38 [INFO] STARTED : verify_missing_field
+02-08-2026 19:24:40 [INFO] PASSED : verify_missing_field
+02-08-2026 19:24:40 [INFO] STARTED : verify_empty_body
+02-08-2026 19:24:42 [INFO] PASSED : verify_empty_body
+02-08-2026 19:24:42 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 19:24:43 [ERROR] FAILED : verify_with_totalprice_non_number
+02-08-2026 19:24:43 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.UpdateBookingTest.verify_with_totalprice_non_number(UpdateBookingTest.java:131) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:24:43 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 19:24:45 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 19:24:45 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 19:24:47 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 19:24:47 [INFO] STARTED : verify_updated_fields
+02-08-2026 19:24:48 [INFO] PASSED : verify_updated_fields
+02-08-2026 19:24:48 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 19:24:50 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 19:24:50 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 19:24:51 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 19:24:51 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:24:53 [ERROR] FAILED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:24:53 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.PartialUpdateBookingTest.verify_with_depositpaid_invalid_strings(PartialUpdateBookingTest.java:90) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:24:53 [INFO] STARTED : delete_existing_booking
+02-08-2026 19:24:55 [INFO] PASSED : delete_existing_booking
+02-08-2026 19:24:55 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:24:56 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:24:56 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:24:58 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:24:58 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:25:00 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:25:00 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:25:01 [ERROR] FAILED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:25:01 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <405> but was <201>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.DeleteBookingTest.verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token(DeleteBookingTest.java:65) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:25:01 [INFO] ========== Test Suite Finished : API Automation Tests ==========
+02-08-2026 19:35:37 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 19:35:38 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 19:35:42 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 19:35:42 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 19:35:44 [INFO] PASSED : verifyHealthCheckResponseTime
+02-08-2026 19:35:44 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:35:45 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:35:45 [INFO] STARTED : verifyAuthToken
+02-08-2026 19:35:48 [INFO] PASSED : verifyAuthToken
+02-08-2026 19:35:48 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 19:35:49 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 19:35:49 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 19:35:51 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 19:35:51 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 19:35:52 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 19:35:52 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 19:35:54 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 19:35:54 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 19:35:56 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 19:35:56 [INFO] STARTED : createBooking
+02-08-2026 19:35:57 [INFO] PASSED : createBooking
+02-08-2026 19:35:57 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 19:35:59 [INFO] PASSED : creat_booking_without_aditional_fields
+02-08-2026 19:35:59 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 19:36:00 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 19:36:00 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 19:36:02 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 19:36:02 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 19:36:03 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 19:36:03 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 19:36:05 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 19:36:05 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 19:36:06 [INFO] PASSED : booking_with_totalprice_as_string
+02-08-2026 19:36:06 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 19:36:08 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 19:36:08 [INFO] STARTED : booking_dates
+02-08-2026 19:36:09 [INFO] PASSED : booking_dates
+02-08-2026 19:36:09 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 19:36:11 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 19:36:11 [INFO] STARTED : get_booking
+02-08-2026 19:36:13 [INFO] PASSED : get_booking
+02-08-2026 19:36:13 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 19:36:15 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 19:36:15 [INFO] STARTED : filter_by_firstname
+02-08-2026 19:36:16 [INFO] PASSED : filter_by_firstname
+02-08-2026 19:36:16 [INFO] STARTED : filter_by_lastname
+02-08-2026 19:36:18 [INFO] PASSED : filter_by_lastname
+02-08-2026 19:36:18 [INFO] STARTED : checking_checkout_date
+02-08-2026 19:36:20 [INFO] PASSED : checking_checkout_date
+02-08-2026 19:36:20 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:36:21 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:36:21 [INFO] STARTED : get_booking_id
+02-08-2026 19:36:24 [INFO] PASSED : get_booking_id
+02-08-2026 19:36:24 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 19:36:25 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 19:36:25 [INFO] STARTED : verify_non_existing_id
+02-08-2026 19:36:27 [INFO] PASSED : verify_non_existing_id
+02-08-2026 19:36:27 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 19:36:28 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 19:36:28 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:36:30 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:36:30 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 19:36:32 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 19:36:32 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 19:36:33 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 19:36:33 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 19:36:35 [INFO] PASSED : verifyUpdatedBookingDataPersists
+02-08-2026 19:36:35 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 19:36:37 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 19:36:37 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 19:36:38 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 19:36:38 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 19:36:40 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 19:36:40 [INFO] STARTED : verify_missing_field
+02-08-2026 19:36:41 [INFO] PASSED : verify_missing_field
+02-08-2026 19:36:41 [INFO] STARTED : verify_empty_body
+02-08-2026 19:36:43 [INFO] PASSED : verify_empty_body
+02-08-2026 19:36:43 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 19:36:45 [INFO] PASSED : verify_with_totalprice_non_number
+02-08-2026 19:36:45 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 19:36:47 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 19:36:47 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 19:36:49 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 19:36:49 [INFO] STARTED : verify_updated_fields
+02-08-2026 19:36:50 [INFO] PASSED : verify_updated_fields
+02-08-2026 19:36:50 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 19:36:52 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 19:36:52 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 19:36:53 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 19:36:53 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:36:55 [INFO] PASSED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:36:55 [INFO] STARTED : delete_existing_booking
+02-08-2026 19:36:57 [INFO] PASSED : delete_existing_booking
+02-08-2026 19:36:57 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:36:58 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:36:58 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:37:00 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:37:00 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:37:02 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:37:02 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:37:03 [ERROR] FAILED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:37:03 [ERROR] Reason : 
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <405> but was <201>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.5.0.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.22.jar:4.0.22]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.22.jar:4.0.22]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143) ~[rest-assured-5.5.0.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89) ~[rest-assured-5.5.0.jar:?]
+	at test.DeleteBookingTest.verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token(DeleteBookingTest.java:65) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) [testng-7.7.1.jar:7.7.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) [testng-7.7.1.jar:7.7.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.1.jar:7.7.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.1.jar:7.7.1]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.1.jar:7.7.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.3.0.jar:3.3.0]
+02-08-2026 19:37:03 [INFO] ========== Test Suite Finished : API Automation Tests ==========
+02-08-2026 19:42:32 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 19:42:33 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 19:42:36 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 19:42:36 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 19:42:38 [INFO] PASSED : verifyHealthCheckResponseTime
+02-08-2026 19:42:38 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:42:40 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 19:42:40 [INFO] STARTED : verifyAuthToken
+02-08-2026 19:42:43 [INFO] PASSED : verifyAuthToken
+02-08-2026 19:42:43 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 19:42:45 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 19:42:45 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 19:42:47 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 19:42:47 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 19:42:48 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 19:42:48 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 19:42:50 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 19:42:50 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 19:42:52 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 19:42:52 [INFO] STARTED : createBooking
+02-08-2026 19:42:53 [INFO] PASSED : createBooking
+02-08-2026 19:42:53 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 19:42:55 [INFO] PASSED : creat_booking_without_aditional_fields
+02-08-2026 19:42:55 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 19:42:57 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 19:42:57 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 19:42:58 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 19:42:58 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 19:43:00 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 19:43:00 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 19:43:02 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 19:43:02 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 19:43:03 [INFO] PASSED : booking_with_totalprice_as_string
+02-08-2026 19:43:03 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 19:43:05 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 19:43:05 [INFO] STARTED : booking_dates
+02-08-2026 19:43:06 [INFO] PASSED : booking_dates
+02-08-2026 19:43:06 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 19:43:08 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 19:43:08 [INFO] STARTED : get_booking
+02-08-2026 19:43:10 [INFO] PASSED : get_booking
+02-08-2026 19:43:10 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 19:43:12 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 19:43:12 [INFO] STARTED : filter_by_firstname
+02-08-2026 19:43:14 [INFO] PASSED : filter_by_firstname
+02-08-2026 19:43:14 [INFO] STARTED : filter_by_lastname
+02-08-2026 19:43:15 [INFO] PASSED : filter_by_lastname
+02-08-2026 19:43:15 [INFO] STARTED : checking_checkout_date
+02-08-2026 19:43:17 [INFO] PASSED : checking_checkout_date
+02-08-2026 19:43:17 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:43:19 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 19:43:19 [INFO] STARTED : get_booking_id
+02-08-2026 19:43:21 [INFO] PASSED : get_booking_id
+02-08-2026 19:43:21 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 19:43:23 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 19:43:23 [INFO] STARTED : verify_non_existing_id
+02-08-2026 19:43:24 [INFO] PASSED : verify_non_existing_id
+02-08-2026 19:43:24 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 19:43:26 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 19:43:26 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:43:28 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 19:43:28 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 19:43:29 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 19:43:29 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 19:43:31 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 19:43:31 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 19:43:32 [INFO] PASSED : verifyUpdatedBookingDataPersists
+02-08-2026 19:43:32 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 19:43:34 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 19:43:34 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 19:43:36 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 19:43:36 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 19:43:37 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 19:43:37 [INFO] STARTED : verify_missing_field
+02-08-2026 19:43:39 [INFO] PASSED : verify_missing_field
+02-08-2026 19:43:39 [INFO] STARTED : verify_empty_body
+02-08-2026 19:43:41 [INFO] PASSED : verify_empty_body
+02-08-2026 19:43:41 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 19:43:42 [INFO] PASSED : verify_with_totalprice_non_number
+02-08-2026 19:43:42 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 19:43:44 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 19:43:44 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 19:43:45 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 19:43:45 [INFO] STARTED : verify_updated_fields
+02-08-2026 19:43:47 [INFO] PASSED : verify_updated_fields
+02-08-2026 19:43:47 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 19:43:49 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 19:43:49 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 19:43:50 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 19:43:50 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:43:52 [INFO] PASSED : verify_with_depositpaid_invalid_strings
+02-08-2026 19:43:52 [INFO] STARTED : delete_existing_booking
+02-08-2026 19:43:54 [INFO] PASSED : delete_existing_booking
+02-08-2026 19:43:54 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:43:55 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 19:43:55 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:43:57 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 19:43:57 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:43:59 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 19:43:59 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:44:01 [INFO] PASSED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 19:44:01 [INFO] ========== Test Suite Finished : API Automation Tests ==========
+02-08-2026 20:08:36 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 20:08:37 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 20:08:40 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 20:08:40 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 20:08:42 [INFO] PASSED : verifyHealthCheckResponseTime
+02-08-2026 20:08:42 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 20:08:44 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 20:08:44 [INFO] STARTED : verifyAuthToken
+02-08-2026 20:08:46 [INFO] PASSED : verifyAuthToken
+02-08-2026 20:08:46 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 20:08:48 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 20:08:48 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 20:08:49 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 20:08:49 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 20:08:51 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 20:08:51 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 20:08:52 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 20:08:52 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 20:08:54 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 20:08:54 [INFO] STARTED : createBooking
+02-08-2026 20:08:56 [INFO] PASSED : createBooking
+02-08-2026 20:08:56 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 20:08:57 [INFO] PASSED : creat_booking_without_aditional_fields
+02-08-2026 20:08:57 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 20:08:59 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 20:08:59 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 20:09:01 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 20:09:01 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 20:09:03 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 20:09:03 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 20:09:04 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 20:09:04 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 20:09:06 [INFO] PASSED : booking_with_totalprice_as_string
+02-08-2026 20:09:06 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 20:09:08 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 20:09:08 [INFO] STARTED : booking_dates
+02-08-2026 20:09:09 [INFO] PASSED : booking_dates
+02-08-2026 20:09:09 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 20:09:11 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 20:09:11 [INFO] STARTED : get_booking
+02-08-2026 20:09:13 [INFO] PASSED : get_booking
+02-08-2026 20:09:13 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 20:09:15 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 20:09:15 [INFO] STARTED : filter_by_firstname
+02-08-2026 20:09:17 [INFO] PASSED : filter_by_firstname
+02-08-2026 20:09:17 [INFO] STARTED : filter_by_lastname
+02-08-2026 20:09:18 [INFO] PASSED : filter_by_lastname
+02-08-2026 20:09:18 [INFO] STARTED : checking_checkout_date
+02-08-2026 20:09:20 [INFO] PASSED : checking_checkout_date
+02-08-2026 20:09:20 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 20:09:21 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 20:09:22 [INFO] STARTED : get_booking_id
+02-08-2026 20:09:23 [INFO] PASSED : get_booking_id
+02-08-2026 20:09:23 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 20:09:25 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 20:09:25 [INFO] STARTED : verify_non_existing_id
+02-08-2026 20:09:27 [INFO] PASSED : verify_non_existing_id
+02-08-2026 20:09:27 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 20:09:28 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 20:09:28 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 20:09:30 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 20:09:30 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 20:09:31 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 20:09:31 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 20:09:33 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 20:09:33 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 20:09:35 [INFO] PASSED : verifyUpdatedBookingDataPersists
+02-08-2026 20:09:35 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 20:09:37 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 20:09:37 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 20:09:39 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 20:09:39 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 20:09:40 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 20:09:40 [INFO] STARTED : verify_missing_field
+02-08-2026 20:09:42 [INFO] PASSED : verify_missing_field
+02-08-2026 20:09:42 [INFO] STARTED : verify_empty_body
+02-08-2026 20:09:44 [INFO] PASSED : verify_empty_body
+02-08-2026 20:09:44 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 20:09:45 [INFO] PASSED : verify_with_totalprice_non_number
+02-08-2026 20:09:45 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 20:09:47 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 20:09:47 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 20:09:48 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 20:09:48 [INFO] STARTED : verify_updated_fields
+02-08-2026 20:09:50 [INFO] PASSED : verify_updated_fields
+02-08-2026 20:09:50 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 20:09:52 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 20:09:52 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 20:09:54 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 20:09:54 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 20:09:56 [INFO] PASSED : verify_with_depositpaid_invalid_strings
+02-08-2026 20:09:56 [INFO] STARTED : delete_existing_booking
+02-08-2026 20:09:57 [INFO] PASSED : delete_existing_booking
+02-08-2026 20:09:57 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 20:09:59 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 20:09:59 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 20:10:00 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 20:10:00 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 20:10:02 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 20:10:02 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 20:10:03 [INFO] PASSED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 20:10:03 [INFO] ========== Test Suite Finished : API Automation Tests ==========
+02-08-2026 20:22:06 [INFO] ========== Test Suite Started : API Automation Tests ==========
+02-08-2026 20:22:07 [INFO] STARTED : verifyHealthCheckStatusCode
+02-08-2026 20:22:11 [INFO] PASSED : verifyHealthCheckStatusCode
+02-08-2026 20:22:11 [INFO] STARTED : verifyHealthCheckResponseTime
+02-08-2026 20:22:13 [INFO] PASSED : verifyHealthCheckResponseTime
+02-08-2026 20:22:13 [INFO] STARTED : verifyHealthCheckWithoutAuthentication
+02-08-2026 20:22:15 [INFO] PASSED : verifyHealthCheckWithoutAuthentication
+02-08-2026 20:22:15 [INFO] STARTED : verifyAuthToken
+02-08-2026 20:22:18 [INFO] PASSED : verifyAuthToken
+02-08-2026 20:22:18 [INFO] STARTED : verifyWithInvalidUsername
+02-08-2026 20:22:19 [INFO] PASSED : verifyWithInvalidUsername
+02-08-2026 20:22:19 [INFO] STARTED : verifyWithInvalidPassword
+02-08-2026 20:22:21 [INFO] PASSED : verifyWithInvalidPassword
+02-08-2026 20:22:21 [INFO] STARTED : verifyUsernameFieldEmpty
+02-08-2026 20:22:22 [INFO] PASSED : verifyUsernameFieldEmpty
+02-08-2026 20:22:22 [INFO] STARTED : verifyPasswordFieldEmpty
+02-08-2026 20:22:24 [INFO] PASSED : verifyPasswordFieldEmpty
+02-08-2026 20:22:24 [INFO] STARTED : verifyWithEmptyBody
+02-08-2026 20:22:26 [INFO] PASSED : verifyWithEmptyBody
+02-08-2026 20:22:26 [INFO] STARTED : createBooking
+02-08-2026 20:22:28 [INFO] PASSED : createBooking
+02-08-2026 20:22:28 [INFO] STARTED : creat_booking_without_aditional_fields
+02-08-2026 20:22:29 [INFO] PASSED : creat_booking_without_aditional_fields
+02-08-2026 20:22:29 [INFO] STARTED : creating_booking_without_fristname
+02-08-2026 20:22:31 [INFO] PASSED : creating_booking_without_fristname
+02-08-2026 20:22:31 [INFO] STARTED : creating_booking_without_lastname
+02-08-2026 20:22:33 [INFO] PASSED : creating_booking_without_lastname
+02-08-2026 20:22:33 [INFO] STARTED : creating_booking_without_date_object
+02-08-2026 20:22:34 [INFO] PASSED : creating_booking_without_date_object
+02-08-2026 20:22:34 [INFO] STARTED : booking_with_totalprice_negative_number
+02-08-2026 20:22:36 [INFO] PASSED : booking_with_totalprice_negative_number
+02-08-2026 20:22:36 [INFO] STARTED : booking_with_totalprice_as_string
+02-08-2026 20:22:38 [INFO] PASSED : booking_with_totalprice_as_string
+02-08-2026 20:22:38 [INFO] STARTED : booking_depositpaid_as_string
+02-08-2026 20:22:39 [INFO] PASSED : booking_depositpaid_as_string
+02-08-2026 20:22:39 [INFO] STARTED : booking_dates
+02-08-2026 20:22:41 [INFO] PASSED : booking_dates
+02-08-2026 20:22:41 [INFO] STARTED : booking_with_special_characters_long_string
+02-08-2026 20:22:43 [INFO] PASSED : booking_with_special_characters_long_string
+02-08-2026 20:22:43 [INFO] STARTED : get_booking
+02-08-2026 20:22:45 [INFO] PASSED : get_booking
+02-08-2026 20:22:45 [INFO] STARTED : verifyBookingListReturned
+02-08-2026 20:22:47 [INFO] PASSED : verifyBookingListReturned
+02-08-2026 20:22:47 [INFO] STARTED : filter_by_firstname
+02-08-2026 20:22:48 [INFO] PASSED : filter_by_firstname
+02-08-2026 20:22:48 [INFO] STARTED : filter_by_lastname
+02-08-2026 20:22:50 [INFO] PASSED : filter_by_lastname
+02-08-2026 20:22:50 [INFO] STARTED : checking_checkout_date
+02-08-2026 20:22:51 [INFO] PASSED : checking_checkout_date
+02-08-2026 20:22:51 [INFO] STARTED : verifyBookingWithNonExistentFilterValue
+02-08-2026 20:22:53 [INFO] PASSED : verifyBookingWithNonExistentFilterValue
+02-08-2026 20:22:53 [INFO] STARTED : get_booking_id
+02-08-2026 20:22:55 [INFO] PASSED : get_booking_id
+02-08-2026 20:22:55 [INFO] STARTED : verifyBookingResponseStructure
+02-08-2026 20:22:57 [INFO] PASSED : verifyBookingResponseStructure
+02-08-2026 20:22:57 [INFO] STARTED : verify_non_existing_id
+02-08-2026 20:22:58 [INFO] PASSED : verify_non_existing_id
+02-08-2026 20:22:58 [INFO] STARTED : verify_booking_id_with_negative_number
+02-08-2026 20:23:00 [INFO] PASSED : verify_booking_id_with_negative_number
+02-08-2026 20:23:00 [INFO] STARTED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 20:23:02 [INFO] PASSED : verify_booking_id_non_numeric_alphabetic
+02-08-2026 20:23:02 [INFO] STARTED : verify_booking_url_with_empty_parameter
+02-08-2026 20:23:04 [INFO] PASSED : verify_booking_url_with_empty_parameter
+02-08-2026 20:23:04 [INFO] STARTED : verifyUpdateBooking
+02-08-2026 20:23:06 [INFO] PASSED : verifyUpdateBooking
+02-08-2026 20:23:06 [INFO] STARTED : verifyUpdatedBookingDataPersists
+02-08-2026 20:23:07 [INFO] PASSED : verifyUpdatedBookingDataPersists
+02-08-2026 20:23:07 [INFO] STARTED : verify_booking_updation_without_auth
+02-08-2026 20:23:09 [INFO] PASSED : verify_booking_updation_without_auth
+02-08-2026 20:23:09 [INFO] STARTED : verify_booking_updation_invalid_token
+02-08-2026 20:23:10 [INFO] PASSED : verify_booking_updation_invalid_token
+02-08-2026 20:23:10 [INFO] STARTED : verify_with_valid_token_non_existing_id
+02-08-2026 20:23:12 [INFO] PASSED : verify_with_valid_token_non_existing_id
+02-08-2026 20:23:12 [INFO] STARTED : verify_missing_field
+02-08-2026 20:23:14 [INFO] PASSED : verify_missing_field
+02-08-2026 20:23:14 [INFO] STARTED : verify_empty_body
+02-08-2026 20:23:16 [INFO] PASSED : verify_empty_body
+02-08-2026 20:23:16 [INFO] STARTED : verify_with_totalprice_non_number
+02-08-2026 20:23:17 [INFO] PASSED : verify_with_totalprice_non_number
+02-08-2026 20:23:17 [INFO] STARTED : verify_with_change_name_field
+02-08-2026 20:23:19 [INFO] PASSED : verify_with_change_name_field
+02-08-2026 20:23:19 [INFO] STARTED : verify_update_multiple_fields
+02-08-2026 20:23:20 [INFO] PASSED : verify_update_multiple_fields
+02-08-2026 20:23:20 [INFO] STARTED : verify_updated_fields
+02-08-2026 20:23:22 [INFO] PASSED : verify_updated_fields
+02-08-2026 20:23:22 [INFO] STARTED : verify_updation_without_auth
+02-08-2026 20:23:24 [INFO] PASSED : verify_updation_without_auth
+02-08-2026 20:23:24 [INFO] STARTED : verify_with_invalid_token_patch
+02-08-2026 20:23:25 [INFO] PASSED : verify_with_invalid_token_patch
+02-08-2026 20:23:25 [INFO] STARTED : verify_with_depositpaid_invalid_strings
+02-08-2026 20:23:27 [INFO] PASSED : verify_with_depositpaid_invalid_strings
+02-08-2026 20:23:27 [INFO] STARTED : delete_existing_booking
+02-08-2026 20:23:28 [INFO] PASSED : delete_existing_booking
+02-08-2026 20:23:28 [INFO] STARTED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 20:23:30 [INFO] PASSED : verify_deleted_booking_is_no_longer_accessible
+02-08-2026 20:23:30 [INFO] STARTED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 20:23:32 [INFO] PASSED : verify_delete_is_rejected_when_no_authentication_token_is_provided
+02-08-2026 20:23:32 [INFO] STARTED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 20:23:33 [INFO] PASSED : verify_delete_is_rejected_with_an_invalid_token
+02-08-2026 20:23:33 [INFO] STARTED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 20:23:35 [INFO] PASSED : verify_delete_fails_for_a_non_existent_booking_ID_even_with_a_valid_token
+02-08-2026 20:23:35 [INFO] ========== Test Suite Finished : API Automation Tests ==========
