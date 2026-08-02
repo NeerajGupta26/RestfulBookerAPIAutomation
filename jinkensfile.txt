@@ -6,8 +6,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                g
-git https://github.com/NeerajGupta26/RestfulBookerAPIAutomation.git
+                git 'https://github.com/NeerajGupta26/RestfulBookerAPIAutomation.git'
+            }
         }
 
         stage('Build') {
@@ -18,14 +18,25 @@ git https://github.com/NeerajGupta26/RestfulBookerAPIAutomation.git
 
         stage('Test') {
             steps {
-                bat 'mvn clean test'
+                bat 'mvn test'
             }
         }
 
         stage('Report') {
             steps {
-                echo 'Publishing Report'
+                archiveArtifacts artifacts: 'reports/**', fingerprint: true
+                archiveArtifacts artifacts: 'logs/**', fingerprint: true
             }
+        }
+
+    }
+
+    post {
+
+        always {
+
+            junit 'target/surefire-reports/*.xml'
+
         }
 
     }
