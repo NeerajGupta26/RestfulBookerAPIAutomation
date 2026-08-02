@@ -1,14 +1,9 @@
+
 pipeline {
 
     agent any
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/NeerajGupta26/RestfulBookerAPIAutomation.git'
-            }
-        }
 
         stage('Build') {
             steps {
@@ -22,25 +17,28 @@ pipeline {
             }
         }
 
-        stage('Report') {
+        stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: 'reports/**', fingerprint: true
                 archiveArtifacts artifacts: 'logs/**', fingerprint: true
             }
         }
-
     }
 
     post {
 
         always {
 
-            junit 'target/surefire-reports/*.xml'
+            junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
 
         }
 
+        success {
+            echo 'Build and Test Execution Completed Successfully'
+        }
+
+        failure {
+            echo 'Build Failed'
+        }
     }
-
-
-
 }
