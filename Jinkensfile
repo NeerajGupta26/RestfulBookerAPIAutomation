@@ -1,7 +1,9 @@
-
 pipeline {
-
     agent any
+
+    tools {
+        maven 'maven3'
+    }
 
     stages {
 
@@ -26,11 +28,8 @@ pipeline {
     }
 
     post {
-
         always {
-
             junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
-
         }
 
         success {
