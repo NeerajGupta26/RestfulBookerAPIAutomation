@@ -14,10 +14,11 @@ public class ExtentManager {
             ExtentSparkReporter spark =
                     new ExtentSparkReporter("reports/ExtentReport.html");
 
-            spark.config().setReportName("Restful Booker API Automation");
 
-            spark.config().setDocumentTitle("API Test Report");
 
+spark.config().setReportName("Restful Booker API Automation");
+
+spark.config().setDocumentTitle("API Test Report");
             extent = new ExtentReports();
 
             extent.attachReporter(spark);
